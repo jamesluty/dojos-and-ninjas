@@ -34,7 +34,6 @@ public class NinjasController {
 	@PostMapping("/ninjas/create")
 	public String createNinja(@Valid @ModelAttribute("ninja") Ninjas ninja, BindingResult result, Model model) {
 		model.addAttribute("allDojos", dojosService.getAll());
-		System.out.println(ninja.getDojo());
 		if(result.hasErrors()) {
 			return "ninjas.jsp";
 		} else {

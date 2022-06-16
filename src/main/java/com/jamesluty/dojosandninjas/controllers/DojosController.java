@@ -27,7 +27,7 @@ public class DojosController {
 	}
 	
 	@GetMapping("/dojos/new")
-	public String dojos(@ModelAttribute("dojos") Dojos dojo, Model model) {
+	public String dojos(@ModelAttribute("dojo") Dojos dojo, Model model) {
 		model.addAttribute("allDojos", dojosService.getAll());
 		return "dojos.jsp";
 	}
@@ -40,7 +40,8 @@ public class DojosController {
 	
 //	POST routes
 	@PostMapping("/dojos/create")
-	public String createDojo(@Valid @ModelAttribute("dojo") Dojos dojo, BindingResult result) {
+	public String createDojo(@Valid @ModelAttribute("dojo") Dojos dojo, BindingResult result, Model model) {
+		model.addAttribute("allDojos", dojosService.getAll());
 		if(result.hasErrors()) {
 			return "dojos.jsp";
 		} else {

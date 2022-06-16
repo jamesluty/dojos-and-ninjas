@@ -19,23 +19,26 @@
 </head>
 <body>
 	<div class="ninjaWrapper">
-	    <h1>New Ninja</h1>
+		<div class="ninjaHeader">
+		    <h1>New Ninja</h1>
+		    <a href="/dojos/new">home</a>
+		</div>
 	    <form:form class="dojoForm" action="/ninjas/create" method="post" modelAttribute="ninja">
 	    	<div class="formItem">
 		    	<form:label path="firstName">First Name: </form:label>
 		    	<form:input path="firstName"/>
-		    	<form:errors class="errors" path="firstName"/>
 	    	</div>
+	    	<form:errors class="errors" path="firstName"/>
 	    	<div class="formItem">
 		    	<form:label path="lastName">Last Name: </form:label>
 		    	<form:input path="lastName"/>
-		    	<form:errors class="errors" path="lastName"/>
 	    	</div>
+	    	<form:errors class="errors" path="lastName"/>
 	    	<div class="formItem">
 		    	<form:label path="age">Age: </form:label>
 		    	<form:input path="age"/>
-		    	<form:errors class="errors" path="age"/>
 	    	</div>
+	    	<form:errors class="errors" path="age"/>
 	    	<div class="formItem">
 		    	<form:select path="dojo">
 		    		<c:forEach var="dojo" items="${allDojos }">

@@ -26,12 +26,12 @@
 			</c:forEach>
 		</ul>
 	    <h1>New Dojo</h1>
-	    <form:form class="dojoForm" action="/dojos/create" method="post" modelAttribute="dojos">
+	    <form:form class="dojoForm" action="/dojos/create" method="post" modelAttribute="dojo">
 	    	<div>
 		    	<form:label path="name">Name: </form:label>
 		    	<form:input path="name"/>
 	    	</div>
-	    	<form:errors class="errors" path="name"/>
+    		<form:errors class="errors" path="name"/>
 	    	<div class="btnDiv">
 		    	<button class="btn btn-primary">Create Dojo</button>
 	    	</div>

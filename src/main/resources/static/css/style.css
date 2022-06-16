@@ -12,7 +12,7 @@
 .dojoForm {
 	display: flex;
 	flex-direction: column;
-	margin-top: 20px;
+	margin-top: 10px;
 	width: 20%;
 }
 
@@ -29,9 +29,16 @@
 }
 
 .formItem {
-	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .showWrapper {
 	margin: 40px 70px;
+}
+
+.ninjaHeader {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
 }
