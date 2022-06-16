@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.dojoWrapper {
+	margin: 40px 70px
+}
+
+.dojoForm {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	width: 20%;
+}
+
+.errors {
+	color: red;
+}
+
+.btn {
+	margin-top: 20px;
+}
+
+.ninjaWrapper {
+	margin: 40px 70px
+}
+
+.formItem {
+	margin-bottom: 10px;
+}
+
+.showWrapper {
+	margin: 40px 70px;
+}
